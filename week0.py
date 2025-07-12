@@ -23,7 +23,6 @@ def dose(needs):
         for i in needs:
             vitamins = int(i / 10) if (i % 10 == 0) else int(i / 10 + 1)
             injections = vitamins * 10 - i
-            print('==', i, vitamins, injections, '==')
             out.append((vitamins, injections))
 
         return out
