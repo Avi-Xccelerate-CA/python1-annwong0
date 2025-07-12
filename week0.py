@@ -16,7 +16,7 @@ def dose(needs):
     if (not isinstance(needs, list)):
         print('Your input should be a list')
 
-    if (sum(needs) <= 0 or sum(needs) >= 500 or (len([i for i in needs if i >= 250]) > 0)):
+    if (sum(needs) <= 0 or sum(needs) > 500 or (len([i for i in needs if i >= 250]) > 0)):
         return 'No medicine given'
     else:
         out = []
